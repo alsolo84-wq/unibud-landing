@@ -8,14 +8,16 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="UNIBUD - Ваш дім, наші ЗБВ">
     <meta property="og:image" content="https://www.unibud.com/image.jpg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
+    <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
 
     <!-- Hero Section -->
     <section aria-label="Головний розділ">
         <h1>ВАШ ДІМ, НАШІ ЗБВ</h1>
-        <img src="hero.jpg" loading="lazy" alt="Герой зображення UNIBUD">
+        <img src="hero.jpg" fetchpriority="high" loading="eager" decoding="async" alt="Герой зображення UNIBUD">
     </section>
 
     <!-- Features Section -->
