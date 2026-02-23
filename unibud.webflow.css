@@ -1,0 +1,12 @@
+.some-class {  /*  Example of optimized rule */  font-family: 'YourFont', sans-serif;  /* removed duplicate @font-face here */  margin: 0;  padding: 0;}
+
+@media (max-width: 600px) { /* optimized media queries */  .some-class { display: visibility; } }
+
+/* Improved Selector Specificity */
+.container .some-class {  /* example of improved specificity */}
+
+/* Minified CSS rule for performance */
+.button { background: blue; color: white; }
+
+/* Improved layout shift prevention */
+body { overflow-x: hidden; }
